@@ -1,0 +1,76 @@
+{
+  "remind": {
+    "errcode": 0,
+    "errmsg": "ok",
+    "errdata": {
+      "data": [
+        {
+          "type": "schedule",
+          "time": "20:00",
+          "id": 7,
+          "title": "喵喵喵"
+        },
+        {
+          "type": "schedule",
+          "time": "20:00",
+          "id": 8,
+          "title": "喵喵喵"
+        },
+        {
+          "type": "schedule",
+          "time": "20:00",
+          "id": 9,
+          "title": "喵喵喵"
+        }
+      ]
+    }
+  },
+  "schedule": {
+    "errcode": 0,
+    "errmsg": "ok",
+    "errdata": {
+      "data": [
+      {
+          "id": 6,
+          "name": "喵喵喵",
+          "type": 1,
+          "fullday": 0,
+          "start_at": "2018-08-17 19:06:00",
+          "end_at": "2018-08-17 21:00:00",
+          "remind_at": "2018-08-17 20:50:00"
+        },
+        {
+          "id": 7,
+          "name": "喵喵喵",
+          "type": 1,
+          "fullday": 0,
+          "start_at": "2018-08-17 19:26:00",
+          "end_at": "2018-09-17 21:00:00",
+          "remind_at": "2018-09-07 20:50:00"
+        },
+        {
+          "id": 8,
+          "name": "喵喵喵",
+          "type": 1,
+          "fullday": 0,
+          "start_at": "2018-08-17 19:26:00",
+          "end_at": "2018-09-07 21:00:00",
+          "remind_at": "2018-09-07 20:50:00"
+        }
+      ]
+    }
+  },
+  "eventdays": {
+    "errcode": 0,
+    "errmsg": "ok",
+    "errdata": {
+      "data": [
+        "2018-08-17",
+        "2018-09-07",
+        "2018-09-03",
+        "2018-09-01",
+        "2018-08-11"
+      ]
+    }
+  }
+}

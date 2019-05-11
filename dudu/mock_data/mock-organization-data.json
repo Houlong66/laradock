@@ -1,0 +1,326 @@
+{
+  "organizations": [
+    {
+      "star_target_num": 3,
+      "outer_contact_num": 3,
+      "m_group_num": 2,
+      "m_org": "华南理工大学",
+      "org_coding": "123456110",
+      "same_lavel_dept":[
+        {
+          "dept": "组织部",
+          "number": 15,
+          "dept_id": 1
+        },
+        {
+          "dept": "教务处",
+          "number": 3,
+          "dept_id": 2
+        },
+        {
+          "dept": "公关部",
+          "number": 35,
+          "dept_id": 3
+        }
+      ],
+      "junior_unit": [
+        {
+          "unit": "计算机学院",
+          "number": 24,
+          "unit_id": 1
+        },
+        {
+          "unit": "软件学院",
+          "number": 34,
+          "unit_id": 2
+        }
+      ],
+      "group": [
+        {
+          "group": "群A",
+          "number": 14,
+          "group_id": 1
+        },
+        {
+          "group": "群B",
+          "number": 24,
+          "group_id": 2
+        }
+      ],
+      "bill": {
+        "status": "正常",
+        "valid_time": "2018-09-14 00:00:00",
+        "bill_list": [
+          {
+            "time": "2018-09-13 00:00:00",
+            "cost": "1000",
+            "status": "缴费成功"
+          },
+          {
+            "time": "2018-09-12 00:00:00",
+            "cost": "2000",
+            "status": "缴费失败"
+          },
+          {
+            "time": "2018-09-11 00:00:00",
+            "cost": "1500",
+            "status": "缴费成功"
+          }
+        ]
+      },
+      "org": [
+        {
+         "name": "保安处",
+         "number": "2"
+       },
+       {
+        "name": "院长办公室",
+        "number": "2"
+       }
+      ],
+      "m_org_id": "1"
+    },
+    {
+      "star_target_num": "3",
+      "outer_contact_num": "3",
+      "m_group_num": "2",
+      "m_org": "广工",
+      "org_coding": "123456110",
+      "same_lavel_dept":[
+        {
+          "dept": "组织部",
+          "number": 15,
+          "dept_id": 1
+        },
+        {
+          "dept": "教务处",
+          "number": 3,
+          "dept_id": 2
+        },
+        {
+          "dept": "公关部",
+          "number": 35,
+          "dept_id": 3
+        }
+      ],
+      "junior_unit": [
+        {
+          "unit": "计算机学院",
+          "number": 24,
+          "unit_id": 1
+        },
+        {
+          "unit": "软件学院",
+          "number": 34,
+          "unit_id": 2
+        }
+      ],
+      "group": [
+        {
+          "name": "群A",
+          "number": 14,
+          "group_id": 1
+        },
+        {
+          "name": "群B",
+          "number": 24,
+          "group_id": 2
+        }
+      ],
+      "bill": {
+        "status": "正常",
+        "valid_time": "2018-09-14 00:00:00",
+        "bill_list": [
+          {
+            "time": "2018-09-13 00:00:00",
+            "cost": "1000",
+            "status": "缴费成功"
+          },
+          {
+            "time": "2018-09-12 00:00:00",
+            "cost": "2000",
+            "status": "缴费失败"
+          },
+          {
+            "time": "2018-09-11 00:00:00",
+            "cost": "1500",
+            "status": "缴费成功"
+          }
+        ]
+      },
+      "org": [
+        {
+         "name": "保安处",
+         "number": "2"
+       },
+       {
+        "name": "院长办公室",
+        "number": "2"
+       }
+      ],
+      "m_org_id": "2"
+    },
+    {
+      "star_target_num": "3",
+      "outer_contact_num": "3",
+      "m_group_num": "2",
+      "org": [
+        {
+         "name": "保安处",
+         "number": "2"
+       },
+       {
+        "name": "院长办公室",
+        "number": "2"
+       }
+      ],
+      "m_org_id": "3"
+    },
+    {
+      "star_target_num": "3",
+      "outer_contact_num": "3",
+      "m_group_num": "2",
+      "org": [
+        {
+         "name": "保安处",
+         "number": "2"
+       },
+       {
+        "name": "院长办公室",
+        "number": "2"
+       }
+      ],
+      "m_org_id": "4"
+    }
+  ],
+  "group":[
+   {
+      "wg_id": "1",
+      "name": "财务群",
+      "description": "我是财务群说明我是说明我是说明",
+      "num": "5"
+   },
+   {
+      "wg_id": "2",
+      "name": "汇考群",
+      "description": "汇考说明汇考说明汇考说明说明好像太长了说明好像太长了",
+      "num": "8"
+   }
+  ],
+  "dept": [
+    {
+        "user_id": "1",
+        "name": "张三",
+        "identify": "成员",
+        "tel": "11011000011",
+        "avatar": "https://cdn.vuetifyjs.com/images/lists/1.jpg"
+    },
+    {
+      "user_id": "2",
+      "name": "李四",
+      "identify": "处长",
+      "tel": "11011000011",
+      "avatar": "https://cdn.vuetifyjs.com/images/lists/1.jpg"
+    }
+  ],
+  "outerContacts": [
+    {
+      "user_id": "1",
+      "name": "张三",
+      "tel": "11001115587",
+      "org_name":"广东工业大学",
+      "dept_name": "教务处",
+      "identify": "处长",
+      "avatar": "https://cdn.vuetifyjs.com/images/lists/1.jpg"
+    },
+    {
+      "user_id": "2",
+      "name": "李四",
+      "tel": "11001115587",
+      "org_name":"汕头大学",
+      "dept_name": "保卫处",
+      "identify": "大队长",
+      "avatar": "https://cdn.vuetifyjs.com/images/lists/1.jpg"
+    },
+    {
+      "user_id": "3",
+      "name": "王五",
+      "tel": "11001115587",
+      "org_name":"广东监管中心",
+      "dept_name": "教务处",
+      "identify": "小队长",
+      "avatar": "https://cdn.vuetifyjs.com/images/lists/1.jpg"
+    }
+  ],
+  "starContacts": [
+    {
+      "user_id": "1",
+      "name": "张三",
+      "tel": "11001115587",
+      "org_name":"广东工业大学",
+      "dept_name": "教务处",
+      "identify": "处长",
+      "avatar": "https://cdn.vuetifyjs.com/images/lists/1.jpg"
+    },
+    {
+      "user_id": "2",
+      "name": "李四",
+      "tel": "11001115587",
+      "org_name":"汕头大学",
+      "dept_name": "保卫处",
+      "identify": "大队长",
+      "avatar": "https://cdn.vuetifyjs.com/images/lists/1.jpg"
+    },
+    {
+      "user_id": "3",
+      "name": "王五",
+      "tel": "11001115587",
+      "org_name":"广东监管中心",
+      "dept_name": "教务处",
+      "identify": "小队长",
+      "avatar": "https://cdn.vuetifyjs.com/images/lists/1.jpg"
+    }
+  ],
+  "searchUsers": [
+  {
+    "user_id": "3",
+    "name": "王五",
+    "user_type": "1",
+    "org_name":"广东监管中心",
+    "dept_name": "监管员",
+    "avatar": "https://cdn.vuetifyjs.com/images/lists/1.jpg"
+  },
+  {
+    "user_id": "3",
+    "name": "王五",
+    "user_type": "1",
+    "org_name": "华南理工大学",
+    "dept_name": "校长",
+    "avatar": "https://cdn.vuetifyjs.com/images/lists/1.jpg"
+  },
+  {
+    "user_id": "3",
+    "name": "王五",
+    "user_type": "2",
+    "org_name":"广东药物局",
+    "dept_name": "监督员",
+    "avatar": "https://cdn.vuetifyjs.com/images/lists/1.jpg"
+  },
+  {
+    "user_id": "3",
+    "name": "王五",
+    "org_name":"保健中心",
+    "dept_name": "处长",
+    "user_type": "3",
+    "avatar": "https://cdn.vuetifyjs.com/images/lists/1.jpg"
+  },
+  {
+    "user_id": "3",
+    "name": "王五",
+    "user_type": "4",
+    "org_name":"广东药物局",
+    "dept_name": "监督员",
+    "avatar": "https://cdn.vuetifyjs.com/images/lists/1.jpg"
+  }
+  ]
+}

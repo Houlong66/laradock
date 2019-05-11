@@ -1,0 +1,75 @@
+{
+    "user": [{
+      "name": "小萨",
+      "avatar": "https://cdn.vuetifyjs.com/images/lists/1.jpg",
+      "mobileNumber": "11011000110101",
+      "email": "1575539475@qq.com",
+      "address": "广州市番禺区小谷围街道",
+      "fixedContactNumber": "020-400800800",
+      "qq": "1575539475",
+      "weixin": "weixin123456",
+      "sex": "男",
+      "unitPosition": "单位职位",
+      "telIsBind": "false",
+      "weixinCard": "https://cdn.vuetifyjs.com/images/lists/1.jpg",
+      "isPublic": {
+        "name": true,
+        "avatar": false,
+        "sex": true,
+        "mobileNumber": false,
+        "email": false,
+        "address": false,
+        "fixedContactNumber": false,
+        "qq": false,
+        "weixin": false,
+        "unitPosition": true
+      },
+      "orgs": [
+      {
+        "org_id": 1,
+        "org_name": "华南理工大学",
+        "dept_name": "教务处",
+        "identify": "内部成员"
+      },
+      {
+        "org_id": 2,
+        "org_name": "中山大学",
+        "dept_name": "保卫处",
+        "identify": "内部成员"
+      },
+      {
+        "org_id": 3,
+        "org_name": "广东药物监管中心",
+        "dept_name": "药物监管员",
+        "identify": "内部成员"
+      }
+      ]
+    }],
+    "orgsSelector": [
+      {
+        "org_id": 1,
+        "dept": [
+          {
+            "dept_name": "保卫处",
+            "dept_id": 1
+          },
+          {
+            "dept_name": "医疗卫生处",
+            "dept_id": 2
+          },
+          {
+            "dept_name": "教务处",
+            "dept_id": 3
+          },
+          {
+            "dept_name": "保安处",
+            "dept_id": 4
+          },
+          {
+            "dept_name": "监管部门",
+            "dept_id": 5
+          }
+        ]
+      }
+    ]
+}

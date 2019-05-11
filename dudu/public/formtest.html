@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="http://www.w3school.com.cn/jquery/jquery-1.11.1.min.js"></script>
+    <script type="application/javascript">
+        function sb() {
+            titl = $("#box01 input[name='title']").val()
+            body = $("#box01 input[name='body']").val()
+            significance = $("#box01 input[name='significance']").val()
+            org_id = $("#box01 input[name='org_id']").val()
+            wg_id = $("#box01 input[name='wg_id']").val()
+
+            workunit = $("#box01 input[name='workunit']").val()
+            workdept = $("#box01 input[name='workdept']").val()
+            workperson = $("#box01 input[name='workperson']").val()
+
+            $.post("/api/task/create",{title: titl, body: body,
+                target:{'orgid': org_id, 'wgid': wg_id, 'workunit': workunit, 'workdept': workdept, 'workperson': workperson},
+                significance: significance },function(result){
+                $('#bbb').html(result)
+            });
+        }
+    </script>
+
+</head>
+<body>
+
+<div id="bbb"></div>
+<br><br>
+
+创建任务表单
+<br>
+<form id="box01" action="/api/task/create" method="post" enctype="multipart/form-data">
+    title: <input type="text" name="title">
+    <br>
+    body: <input type="text" name="body">
+    <br>
+    significance: <input type="text" name="significance">
+    <br>
+    target.org_id: <input type="text" name="org_id">
+    <br>
+    target.wg_id: <input type="text" name="wg_id">
+    <br>
+    target.workunit: <input type="text" name="workunit">
+    <br>
+    target.workdept: <input type="text" name="workdept">
+    <br>
+    target.workperson: <input type="text" name="workperson">
+    <br>
+
+    <button onclick="sb()" type="button">提交</button>
+    <input type="submit" class="btn btn-success save" value="保存"/>
+</form>
+<br><br>
+
+<form action="http://localhost/tp_laoren/php/index.php/auth/Menu/edit" method="post">
+    id: <input type="text" value="73" name="id"><br>
+    name: <input type="text" value="菜单列表xd3" name="name"><br>
+    sort: <input type="text" value="1" name="sort"><br>
+    url: <input type="text" value="auth/menu/index" name="url"><br>
+
+    <input id="submit_for8" type="submit" class="btn btn-success save" value="保存"/>
+</form>
+<br><br>
+
+<form action="http://localhost/tp_laoren/php/index.php/auth/User/add" method="post">
+    id: <input type="text" value="1" name="id"><br>
+    nickname: <input type="text" value="sdfawe" name="nickname"><br>
+    username: <input type="text" value="sdfawe" name="username"><br>
+    password: <input type="text" value="sdfawe" name="password"><br>
+    groupId: <input type="text" value="1" name="groupId[0]"><br>
+    groupId: <input type="text" value="2" name="groupId[1]"><br>
+
+    <input id="submit_for7" type="submit" class="btn btn-success save" value="保存"/>
+</form>
+<br><br>
+
+<form action="http://api.ifshyc.com/index.php/admin/resource/medical/use" method="post">
+    name: <input type="text" value="2 复方甘草" name="name"><br>
+    id: <input type="text" value="2" name="id"><br>
+    lr_id: <input type="text" value="3" name="lr_id"><br>
+    num: <input type="text" value="2" name="num"><br>
+    use_time: <input type="text" value="2018-04-07 01:54:23" name="use_time"><br>
+    ifbulk: <input type="text" value="1" name="ifbulk"><br>
+
+    <input id="submit_form6" type="submit" class="btn btn-success save" value="保存"/>
+</form>
+<br><br>
+
+
+<form action="http://api.ifshyc.com/index.php/admin/fee/monthlypayoption/add" method="post">
+    name: <input type="text" value="卫生wes" name="name"><br>
+    fee_perday: <input type="text" value="20" name="fee_perday"><br>
+    refund_perday: <input type="text" value="5" name="refund_perday"><br>
+    roof: <input type="text" value="354" name="roof"><br>
+    iffix: <input type="text" value="0" name="iffix"><br>
+
+    <input id="submit_form5" type="submit" class="btn btn-success save" value="保存"/>
+</form>
+
+<br><br>
+
+<form action="http://localhost/tp_laoren/php/index.php/admin/laoren/status/1/change" method="post">
+    date: <input type="text" value="2018-04-03" name="date"><br>
+    status:<select name="status">
+    <option value="0">试住期</option>
+    <option value="1">在院</option>
+    <option value="2">回家</option>
+    <option value="3">广穿</option>
+    <option value="4">外院</option>
+    <option value="5">退院</option>
+    <option value="6">死亡</option>
+    <br>
+    护工id: <input type="text" value="3" name="staff_id"><br>
+</select>
+    <br>
+
+    <input id="submit_form4" type="submit" class="btn btn-success save" value="保存"/>
+</form>
+
+<br><br>
+
+<form action="http://localhost/tp_laoren/php/index.php/admin/room/add" method="post">
+
+    roomname: <input type="text" value="307" name="room"><br>
+    roomtype: <input type="text" value="三人间" name="roomtype"><br>
+    bednum: <input type="text" value="6" name="bednum"><br>
+    sex: <input type="text" value="1" name="sex"><br>
+
+    <input id="submit_form2" type="submit" class="btn btn-success save" value="保存"/>
+</form>
+
+<br><br>
+
+<form action="http://localhost/tp_laoren/php/index.php/admin/room/update/1" method="post">
+
+    roomname: <input type="text" value="307" name="room"><br>
+    roomtype: <input type="text" value="三人间" name="roomtype"><br>
+    bednum: <input type="text" value="6" name="bednum"><br>
+    sex: <input type="text" value="1" name="sex"><br>
+
+    <input id="submit_form3" type="submit" class="btn btn-success save" value="保存"/>
+</form>
+<br><br>
+
+<form style="display: none" action="http://127.0.0.1:8081/arrangement/random" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" value="选择jar包"/>
+
+    sheetname: <input type="text" value="step1" name="sheetname"><br>
+    考场数量： <input type="text" name="examsitenum" value="4"><br>
+    姓名： <input type="text" name="name" value="A"><br>
+    是否老师： <input type="text" name="iftech" value="B"><br>
+    身份证： <input type="text" name="idcard" value="C"><br>
+    部门： <input type="text" name="dept" value="D"><br>
+    手机： <input type="text" name="tel" value="E"><br>
+    监考次数： <input type="text" name="num" value="F"><br>
+    <input id="submit_form" type="submit" class="btn btn-success save" value="保存"/>
+</form>
+
+<br><br>
+
+<form action="http://127.0.0.1:8081/arrangement/save" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" value="选择jar包"/>
+    sheetname: <input type="text" value="step2" name="sheetname"><br>
+    examid: <input type="text" value="1" name="examid"><br>
+    resourceid: <input type="text" value="1" name="resourceid"><br>
+    考场号: <input type="text" value="A" name="examsite"><br>
+    教室号: <input type="text" value="B" name="room"><br>
+    name1: <input type="text" value="C" name="name1"><br>
+    tel1: <input type="text" value="F" name="tel1"><br>
+    idcard1: <input type="text" value="D" name="idcard1"><br>
+    dept1: <input type="text" value="E" name="dept1"><br>
+    iftech1: <input type="text" value="G" name="iftech1"><br>
+
+    name2: <input type="text" value="H" name="name2"><br>
+    tel2: <input type="text" value="K" name="tel2"><br>
+    idcard2: <input type="text" value="I" name="idcard2"><br>
+    dept2: <input type="text" value="J" name="dept2"><br>
+    iftech2: <input type="text" value="L" name="iftech2"><br>
+
+    yanjiushengmark: <input type="text" value="" name="yanjiushengmark"><br>
+
+    <input id="submit_form1" type="submit" class="btn btn-success save" value="保存"/>
+</form>
+
+<br><br>
+http://127.0.0.1:8081/arrangement/export/1/1?type=step3-1&fromsite=064&tosite=117
+<a href="http://127.0.0.1:8081/arrangement/export/1/1?type=step3-1">生成 step3-1 </a> <br>
+<a href="http://127.0.0.1:8081/arrangement/export/1/1?type=step3-2">生成 step3-2 </a> <br>
+<a href="http://127.0.0.1:8081/arrangement/export/1/1?type=step3-3">生成 step3-3 </a> <br>
+</body>
+</html>

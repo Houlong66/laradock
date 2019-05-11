@@ -1,0 +1,168 @@
+// Variables
+//@import "variables";
+// Bootstrap
+//@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+// IconFont
+
+@import url("//at.alicdn.com/t/font_808357_1kx7jp0zhp.css");
+// Fonts
+@import "./googleIcon.css";
+// global setting
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.align-self-center {
+    align-self: center;
+}
+
+.flex-self-default {
+    flex: 0 1 auto!important;
+}
+
+.align-self-end {
+    align-self: flex-end;
+}
+
+.icon-blue {
+    color: #308ace !important;
+}
+
+.icon-yellow {
+    color: #ffcc00 !important;
+}
+
+.icon-orange {
+    color: #ff8f49 !important;
+}
+
+.icon-green {
+    color: #21b92f !important;
+}
+
+.icon-pink {
+    color: #ff7ac2 !important;
+}
+
+.work-text {
+    background: #eee;
+    border-radius: 5px;
+    line-height: 24px;
+}
+
+.border-b {
+    border-bottom: solid 1px #ddd;
+}
+
+.border-be {
+    border-bottom: solid 1px #eee;
+}
+
+.border-te {
+    border-top: solid 1px #eee;
+}
+
+.place-holder-box {
+    width: 100%;
+    background: white;
+    text-align: center;
+}
+
+.empty {
+    text-align: center;
+    margin-top: 30px;
+}
+
+// 弹框显示二维码分享引导
+.v-dialog {
+    box-shadow: none !important;
+}
+
+
+
+.dialog-inner {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.mt-6 {
+    margin-top: 96px !important;
+}
+
+//全局按钮
+body .theme--light.v-btn:not(.v-btn--icon):not(.v-btn--flat){
+    background-color: #409EFF !important ;
+}
+
+body td .theme--light.v-btn{
+  color:#000 !important ;
+}
+// 任务发送信息展示
+body .msg-font{
+  font-size: 14px !important;
+}
+
+body .theme--light.v-btn,body .layout .uploader-btn{
+   color:#ffffff  ;
+}
+// 开关
+body   .v-input--switch .v-input--selection-controls__input   .red--text{
+  color:#409EFF !important ;
+}
+body .v-btn.v-btn--outline{
+  border: 1px solid #82b1ff !important;;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.flr {
+    float: right;
+}
+
+.color-grey {
+    color: grey;
+}
+.top-title{
+    background: #eee;
+}
+
+/** treeselect 定制样式 **/
+.vue-treeselect__value-container{
+  overflow: hidden;
+}
+.vue-treeselect__multi-value{
+  max-height: 28px;
+  overflow: hidden;
+}
+.vue-treeselect__menu-container{
+  position: relative!important;
+}
+.vue-treeselect__menu{
+  position: relative!important;
+  border-top:solid 1px #cfcfcf!important;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+}
+.vue-treeselect__control{
+  display:none!important;
+}
